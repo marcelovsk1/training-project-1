@@ -18,13 +18,13 @@ struct WeatherDayView: View {
             Text(dayOfWeek)
                 .font(.system(size: 16, weight: .medium))
                 .foregroundColor(.white)
-            Image(imageName)
+            Image(systemName: imageName)
                 .renderingMode(.original)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40, height: 40)
             
-            Text("5")
+            Text("\(temperature)°")
                 .font(.system(size: 24, weight: .medium))
                 .foregroundColor(.white)
         }

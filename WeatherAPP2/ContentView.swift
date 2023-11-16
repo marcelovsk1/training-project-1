@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             LinearGradient(gradient: Gradient(colors:
-                [Color.indigo, Color.white]),
+                [Color.indigo, Color.gray]),
                 startPoint: .topLeading, endPoint: .bottomTrailing)
                 .edgesIgnoringSafeArea(.all)
             
@@ -28,35 +28,36 @@ struct ContentView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 190, height: 140)
+                        .padding()
+                  
                     
                     Text("-5°")
                         .font(.system(size: 70, weight: .medium))
                         .foregroundColor(.white)
                     
                 }
-                Spacer()
+                .padding(.bottom, 50)
                 
                 HStack(spacing: 20) {
                     WeatherDayView(dayOfWeek: "TUE",
                                    imageName: "cloud.sun.fill",
-                                   temperature: 52)
+                                   temperature: 5)
                     
                     WeatherDayView(dayOfWeek: "WED",
-                                   imageName: "cloud.sun.fill",
-                                   temperature: 52)
+                                   imageName: "sun.max.fill",
+                                   temperature: 8)
                     
                     WeatherDayView(dayOfWeek: "THU",
-                                   imageName: "cloud.sun.fill",
-                                   temperature: 52)
+                                   imageName: "sun.max.fill",
+                                   temperature: 10)
                     
                     WeatherDayView(dayOfWeek: "FRI",
-                                   imageName: "cloud.sun.fill",
-                                   temperature: 52)
+                                   imageName: "wind.snow",
+                                   temperature: 3)
                     
                     WeatherDayView(dayOfWeek: "SAT",
-                                   imageName: "cloud.sun.fill",
-                                   temperature: 52)
-                    
+                                   imageName: "snow",
+                                   temperature: 4)
                     
                 }
                 Spacer()
