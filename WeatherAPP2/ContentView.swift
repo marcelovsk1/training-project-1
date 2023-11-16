@@ -14,6 +14,17 @@ struct ContentView: View {
                 [Color.indigo, Color.white]),
                 startPoint: .topLeading, endPoint: .bottomTrailing)
                 .edgesIgnoringSafeArea(.all)
+            
+            VStack {
+                Text("Montreal, QC")
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+                    .bold()
+                    .padding()
+                Spacer()
+                
+                
+            }
         }
     }
 }
