@@ -31,6 +31,4 @@ struct WeatherDayView: View {
     }
 }
 
-//#Preview {
-//    WeatherDayView(dayOfWeek: String, imageName: String, temperature: Int)
-//}
+

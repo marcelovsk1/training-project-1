@@ -82,12 +82,3 @@ struct ContentView: View {
 }
 
 
-
-struct BackgroundView: View {
-    var body: some View {
-        LinearGradient(gradient: Gradient(colors:
-                                            [Color.indigo, Color.gray]),
-                       startPoint: .topLeading, endPoint: .bottomTrailing)
-        .edgesIgnoringSafeArea(.all)
-    }
-}
