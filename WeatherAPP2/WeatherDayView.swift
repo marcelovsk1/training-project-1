@@ -8,11 +8,29 @@
 import SwiftUI
 
 struct WeatherDayView: View {
+    
+    var dayOfWeek: String
+    var imageName: String
+    var temperature: Int
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text(dayOfWeek)
+                .font(.system(size: 16, weight: .medium))
+                .foregroundColor(.white)
+            Image(imageName)
+                .renderingMode(.original)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 40, height: 40)
+            
+            Text("5")
+                .font(.system(size: 24, weight: .medium))
+                .foregroundColor(.white)
+        }
     }
 }
 
-#Preview {
-    WeatherDayView()
-}
+//#Preview {
+//    WeatherDayView(dayOfWeek: String, imageName: String, temperature: Int)
+//}
