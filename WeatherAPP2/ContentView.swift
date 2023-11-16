@@ -34,6 +34,21 @@ struct ContentView: View {
                         .foregroundColor(.white)
                     
                 }
+                HStack {
+                    VStack {
+                        Text("TUE")
+                            .foregroundColor(.white)
+                        Image(systemName: "cloud.sun.fill")
+                            .renderingMode(.original)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 40, height: 40)
+                        
+                        Text("-5°")
+                            .font(.system(size: 24, weight: .medium))
+                            .foregroundColor(.white)
+                    }
+                }
                 Spacer()
                 
             }
