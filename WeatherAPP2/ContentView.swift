@@ -62,6 +62,19 @@ struct ContentView: View {
                 }
                 Spacer()
                 
+                Button {
+                    print("tapped")
+                } label: {
+                    Text("Change Day Time")
+                        .frame(width: 300, height: 70)
+                        .background(Color.secondary)
+                        .cornerRadius(40)
+                        .font(.title2)
+                        .bold()
+                        .foregroundColor(.white)
+                }
+                
+                Spacer()
             }
         }
     }
