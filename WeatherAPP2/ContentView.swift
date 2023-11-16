@@ -15,7 +15,7 @@ struct ContentView: View {
                 startPoint: .topLeading, endPoint: .bottomTrailing)
                 .edgesIgnoringSafeArea(.all)
             
-            VStack {
+            VStack(spacing: 8) {
                 Text("Montreal, QC")
                     .font(.largeTitle)
                     .foregroundColor(.white)
@@ -26,10 +26,14 @@ struct ContentView: View {
                     Image(systemName: "cloud.sun.fill")
                         .renderingMode(.original)
                         .resizable()
+                        .aspectRatio(contentMode: .fit)
                         .frame(width: 190, height: 140)
                     
+                    Text("-5°")
+                        .font(.system(size: 70, weight: .medium))
+                        .foregroundColor(.white)
+                    
                 }
-                
                 Spacer()
                 
             }
