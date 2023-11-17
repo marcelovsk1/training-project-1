@@ -10,14 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            BackgroundView()
+            BackgroundView(topColor: .indigo, bottomColor: .gray)
             
             VStack(spacing: 8) {
-                Text("Montreal, QC")
-                    .font(.largeTitle)
-                    .foregroundColor(.white)
-                    .bold()
-                    .padding()
+                CityNameViewModel(cityName: "Montreal, QC")
                 
                 VStack {
                     Image(systemName: "cloud.sun.fill")

@@ -6,3 +6,17 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct CityNameViewModel: View {
+    
+    var cityName: String
+    
+    var body: some View {
+        Text(cityName)
+            .font(.largeTitle)
+            .foregroundColor(.white)
+            .bold()
+            .padding()
+    }
+}
