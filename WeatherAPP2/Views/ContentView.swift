@@ -13,7 +13,8 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            BackgroundView(topColor: .indigo, bottomColor: .gray)
+            BackgroundView(topColor: isNight ? .black : .indigo,
+                           bottomColor: isNight ? .indigo : .gray)
             
             VStack(spacing: 8) {
                 CityNameViewModel(cityName: "Montreal, QC")
@@ -49,7 +50,7 @@ struct ContentView: View {
                 Spacer()
                 
                 Button {
-                    print("tapped")
+                    isNight.toggle()
                 } label: {
                     WeatherButtonModel(dayTimeTitle: "Change Day Time",
                                        textColor: .white,
