@@ -16,11 +16,14 @@ struct BackgroundView: View {
     
     var body: some View {
         
-        LinearGradient(gradient: Gradient(colors:
-                        [isNight ? .black : .indigo, isNight ?
-                            .blue : .gray ]),
-                       startPoint: .topLeading,
-                       endPoint: .bottomTrailing)
-        .ignoresSafeArea()
+//        LinearGradient(gradient: Gradient(colors:
+//                        [isNight ? .black : .indigo, isNight ?
+//                            .blue : .gray ]),
+//                       startPoint: .topLeading,
+//                       endPoint: .bottomTrailing)
+//        .ignoresSafeArea()
+        ContainerRelativeShape()
+            .fill(isNight ? Color.indigo.gradient : Color.black.gradient)
+            .ignoresSafeArea()
     }
 }
