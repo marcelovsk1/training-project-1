@@ -20,7 +20,8 @@ struct ContentView: View {
                 CityNameViewModel(cityName: "Montreal, QC")
                 
                 VStack {
-                    WeatherViewModel(imageName: "snow", temperature: 2)
+                    WeatherViewModel(imageName: isNight ? "moon.stars.fill" : "snow",
+                                     temperature: 2)
                 }
                 .padding(.bottom, 50)
                 
