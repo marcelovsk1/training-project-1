@@ -13,8 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            BackgroundView(topColor: isNight ? .black : .indigo,
-                           bottomColor: isNight ? .indigo : .gray)
+            BackgroundView(isNight: $isNight)
             
             VStack(spacing: 8) {
                 CityNameViewModel(cityName: "Montreal, QC")
