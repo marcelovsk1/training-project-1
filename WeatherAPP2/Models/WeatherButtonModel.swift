@@ -24,3 +24,7 @@ struct WeatherButtonModel: View {
             .bold()
     }
 }
+
+#Preview {
+    ContentView()
+}

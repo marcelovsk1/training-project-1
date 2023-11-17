@@ -20,3 +20,7 @@ struct CityNameViewModel: View {
             .padding()
     }
 }
+
+#Preview {
+    ContentView()
+}

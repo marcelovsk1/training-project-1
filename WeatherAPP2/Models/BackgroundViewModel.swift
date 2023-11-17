@@ -27,3 +27,7 @@ struct BackgroundView: View {
             .ignoresSafeArea()
     }
 }
+
+#Preview {
+    ContentView()
+}

@@ -29,3 +29,7 @@ struct WeatherViewModel: View {
         }
     }
 }
+
+#Preview {
+    ContentView()
+}

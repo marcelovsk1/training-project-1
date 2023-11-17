@@ -31,4 +31,7 @@ struct WeatherDayView: View {
     }
 }
 
+#Preview {
+    ContentView()
+}
 
