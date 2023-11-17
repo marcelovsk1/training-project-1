@@ -12,7 +12,7 @@ struct BackgroundView: View {
 //    var topColor: Color
 //    var bottomColor: Color
     
-   @Binding var isNight: Bool
+   var isNight: Bool
     
     var body: some View {
         
