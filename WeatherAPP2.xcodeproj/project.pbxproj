@@ -14,6 +14,8 @@
 		0BA861F32B06A3EA0094F6B6 /* WeatherDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA861F22B06A3EA0094F6B6 /* WeatherDayViewModel.swift */; };
 		0BA861F52B06ACEF0094F6B6 /* BackgroundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA861F42B06ACEF0094F6B6 /* BackgroundViewModel.swift */; };
 		0BA861F92B06EDEC0094F6B6 /* CityNameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA861F82B06EDEC0094F6B6 /* CityNameViewModel.swift */; };
+		0BA861FB2B06EF9E0094F6B6 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA861FA2B06EF9E0094F6B6 /* WeatherViewModel.swift */; };
+		0BA861FD2B06F1850094F6B6 /* WeatherButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA861FC2B06F1850094F6B6 /* WeatherButtonModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		0BA861F22B06A3EA0094F6B6 /* WeatherDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayViewModel.swift; sourceTree = "<group>"; };
 		0BA861F42B06ACEF0094F6B6 /* BackgroundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundViewModel.swift; sourceTree = "<group>"; };
 		0BA861F82B06EDEC0094F6B6 /* CityNameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityNameViewModel.swift; sourceTree = "<group>"; };
+		0BA861FA2B06EF9E0094F6B6 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		0BA861FC2B06F1850094F6B6 /* WeatherButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButtonModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 				0BA861F42B06ACEF0094F6B6 /* BackgroundViewModel.swift */,
 				0BA861F22B06A3EA0094F6B6 /* WeatherDayViewModel.swift */,
 				0BA861F82B06EDEC0094F6B6 /* CityNameViewModel.swift */,
+				0BA861FA2B06EF9E0094F6B6 /* WeatherViewModel.swift */,
+				0BA861FC2B06F1850094F6B6 /* WeatherButtonModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -163,6 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BA861F52B06ACEF0094F6B6 /* BackgroundViewModel.swift in Sources */,
+				0BA861FD2B06F1850094F6B6 /* WeatherButtonModel.swift in Sources */,
+				0BA861FB2B06EF9E0094F6B6 /* WeatherViewModel.swift in Sources */,
 				0BA861E62B0699F40094F6B6 /* ContentView.swift in Sources */,
 				0BA861E42B0699F40094F6B6 /* WeatherAPP2App.swift in Sources */,
 				0BA861F92B06EDEC0094F6B6 /* CityNameViewModel.swift in Sources */,

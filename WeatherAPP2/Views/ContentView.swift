@@ -16,18 +16,7 @@ struct ContentView: View {
                 CityNameViewModel(cityName: "Montreal, QC")
                 
                 VStack {
-                    Image(systemName: "cloud.sun.fill")
-                        .renderingMode(.original)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 190, height: 140)
-                        .padding()
-                  
-                    
-                    Text("-5°")
-                        .font(.system(size: 70, weight: .medium))
-                        .foregroundColor(.white)
-                    
+                    WeatherViewModel(imageName: "snow", temperature: 2)
                 }
                 .padding(.bottom, 50)
                 
@@ -53,6 +42,7 @@ struct ContentView: View {
                                    temperature: 4)
                     
                 }
+                
                 Spacer()
                 
                 Button {
